@@ -78,7 +78,7 @@
         font-family: 'Marcellus', serif;
         font-size: 15px !important;
 
-      
+
 
         .logo {
             width: 124px !important;
@@ -132,7 +132,7 @@
     }
 }
 
-@media (max-width: 732px){
+@media (max-width: 732px) {
     .homeSliderCaption {
         width: 60% !important;
         height: auto;
@@ -164,7 +164,7 @@
     }
 }
 
-@media (max-width: 588px){
+@media (max-width: 588px) {
     .homeSliderCaption {
         width: auto !important;
         height: 100vh !important;
@@ -197,15 +197,198 @@
 }
 
 //Offer
-.offer{
+.offer {
     width: 100%;
-    height: 85vh;
-    border: 1px solid red;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 50px;
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 54.9px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            font-family: sans-serif;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+
+    .top>* {
+        margin-top: 20px !important;
+
+    }
+
+    .offer-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: marcella;
+            text-align: center;
+
+            &:hover {
+                color: #5c3700;
+            }
+        }
+
+        span {
+            text-align: center;
+            font-weight: 300;
+            line-height: 26px;
+            letter-spacing: 0;
+        }
+
+    }
 }
-.armud{
+
+//Banner 
+.banner {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: initial;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Counter
+.counter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .counter-item {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 26px;
+            font-family: 'Marcellus', serif;
+            text-align: center;
+        }
+
+        span {
+            font-weight: 500px;
+            font-size: 55px;
+            font-family: 'Marcellus', serif;
+            text-align: center;
+            color: #be9c79;
+            line-height: 50px;
+            letter-spacing: 3px;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: 'Marcellus', serif;
+            padding: 15px 0px 5px 0px;
+        }
+    }
+}
+
+//Partners
+.partner {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .swiper-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//Home Gallery
+.homeGallery {
+    width: 100%;
+    height: auto;
     border: 1px solid red;
+    font-family: 'Marcellus', serif;
+
+    .top {
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+
+        h2 {
+            font-size: 45px;
+            font-weight: 500;
+        }
+    }
+
+    .bottom {}
+}
+
+//Home Product
+
+.homeProduct {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    .top {
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+
+        h3{
+            font-size: 45px;
+            font-weight: 500;
+        }
+    }
 }

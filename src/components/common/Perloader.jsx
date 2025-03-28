@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import '../../styles/loader.scss'
+import '../../assets/styles/loader.scss'
 const Perloader = () => {
     const { loading } = useSelector((state) => state.loading);
 

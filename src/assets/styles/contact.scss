@@ -1,0 +1,34 @@
+.contact {
+    width: 100%;
+    height: auto;
+  
+    .top {
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus', serif;
+        background-attachment: fixed;
+        background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/what-title.jpg);
+
+        h2 {
+            font-size: 70px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .form{
+        width: 60%;
+
+        }
+    }
+}

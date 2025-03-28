@@ -2,7 +2,7 @@
     margin: 0px !important;
     list-style: none !important;
     text-decoration: none !important;
-
+    // background-color: black;
 }
 
 #root {
@@ -24,6 +24,33 @@
     * {
         font-family: 'Marcellus', serif;
 
+    }
+
+    .dropDown {
+        width: 150px;
+        height: auto;
+        background-color: rgb(107, 56, 9);
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transform: translateX(-30px);
+        margin-top: 10px !important;
+        transition: ease-in-out 0.2s;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .profile-item {
+        position: relative;
+    }
+
+    .profile-item:hover .dropDown {
+        visibility: visible;
+        opacity: 1;
     }
 
     /* örnek şeffaflık */
@@ -52,4 +79,8 @@
             align-items: center;
         }
     }
+}
+
+.sdda {
+    background-color: black;
 }

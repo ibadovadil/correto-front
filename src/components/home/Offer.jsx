@@ -15,15 +15,17 @@ const Offer = () => {
    if (error) return <div>ERROR...</div>
    return (
       <div className='offer container'>
+         <div className="top my-5">
          <h2>Our Delicious Offer</h2>
          <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="icon" />
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-         <Row className='d-flex justify-content-between'>
+         </div>
+         <Row className='d-flex justify-content-between my-5'>
             {offers.map((item, index) => (
-               <Col className="armud" xs={12} sm={6} md={3}>
-                  <p>{item.title}</p>
-                  <p>{item.description}</p>
+               <Col key={item._id} className="offer-item" xs={12} sm={6} md={3}>
                   <img width={106} height={94} src={item.coverImage} alt="" />
+                  <p>{item.title}</p>
+                  <span className='my-2'>{item.description}</span>
                </Col>
             ))}
 

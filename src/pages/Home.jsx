@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react'
-
-import '../styles/home.scss'
+import '../assets/styles/home.scss'
 import HomeSlider from '../components/home/HomeSlider'
 import Offer from '../components/home/Offer'
-import { useDispatch } from 'react-redux'
 import { getOffers } from '../manager/actions/homePage/offer/offerAction'
 import { getSliders } from '../manager/actions/homePage/slider/sliderAction'
-import { showLoading, hideLoading } from '../manager/actions/preloaderAction.js'
+import Banner from '../components/home/Banner.jsx'
+import Counter from '../components/home/Counter.jsx'
+import Partners from '../components/home/Partners.jsx'
+import HomeGallery from '../components/home/HomeGallery.jsx'
+import HomeProduct from '../components/home/HomeProduct.jsx'
+import { useDispatch } from 'react-redux'
+import { hideLoading, showLoading } from '../manager/actions/preloaderAction.js'
 const Home = () => {
     const dispatch = useDispatch();
     useEffect(() => {
@@ -27,10 +31,16 @@ const Home = () => {
         fetchAllData();
 
     }, [dispatch]);
+    // useDataLoader([getOffers, getSliders]);
     return (
         <>
             <HomeSlider />
             <Offer />
+            <Banner />
+            <Counter />
+            <HomeProduct />
+            <HomeGallery />
+            <Partners />
         </>
     )
 }
